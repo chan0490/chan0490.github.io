@@ -9,7 +9,55 @@
 </head>
 <body>
     <header>
-        <img src="/images/logo.png"  alt="Dash Logo">
+        <img src="../landing-page/images/logo.png" alt="The Dash Logo">
     </header>
+    <main>
+        <!--Added divs for main text area and application form to easily apply grid display when styling for desktop--> 
+        <div class="maingrid">
+            <div class="maintext">
+                <h1>Want to be your own boss?</h1>
+                <p> Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            </div>
+            <div class="apply">
+                <h2>Apply Now</h2>
+                <!--Added seperate div within Apply section to easily style the contact form-->
+                <div class=contactform>
+                    <form>
+                        <div class="fnamelabel">
+                            <label for="fname">Enter your info below to get started.</label>
+                        </div>
+                        <input type="text" id="fname" name="fname" value="First name">
+                        <input type="text" id="lname" name="lname" value="Last name">
+                        <input type="text" id="phone" name="phone" value="Phone number">
+                        <input type="text" id="email" name="email" value="Email Address">
+                        <input type="checkbox" id="agreement" name="agreement" value="agree">
+                        <label for="agreement">I agree to dash terms</label>
+                        <button type="button">DRIVE WITH US</button>
+                    </form>
+                </div>
+                <p>Already applied? <a href="#">Check your application status here</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Added seperate divs to easily style footer layouts for different screen sizes-->
+        <div class="calculation">
+            <h4>See how much you can earn with Dash.</h4>
+            <p>how many hours do you want to drive with us this week?</p>
+            <div class="footerinput">
+                <input type="text" id="hours" name="hours" value="Hours">
+                <input type="text" id="city" name="city" value="City">
+                <div class="footerbutton">
+                    <button type="button">CALCULATE</button>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <img src="../landing-page/images/facebook.svg" alt="facebook logo">
+            <img src="../landing-page/images/instagram.svg" alt="instagram logo">
+            <img src="images/twitter.svg" alt="twitter logo">
+            <img src="images/linkedin.svg" alt="linked-in logo">
+        </div>
+    </footer>
 </body>
 </html>
