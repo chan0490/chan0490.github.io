@@ -5,6 +5,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7ff;
+    color: #333131;
 }
 header, main {
     padding: 35px;
@@ -36,6 +37,7 @@ main {
     box-shadow: 10px 10px 15px rgba(128, 128, 128, 0.5);
     margin-top: 300px;
     padding: 30px;
+    color: #333131;
 }
 h2 {
     font-size: 2.5rem;
@@ -51,7 +53,7 @@ h2 {
     background-color: #f7f7ff;
     border: none;
     border-radius: 10px;
-    padding: 10px;
+    padding-left: 10px;
 }
 input[type=checkbox] {
     width: 25px;
@@ -68,6 +70,8 @@ input[type=checkbox] {
     font-size: 1.25rem;
     font-weight: 700;
     margin-top: 10px;
+    color: #333131;
+    margin-left: 5px;
 }
 a:link {
     color: #ff8480;
@@ -86,6 +90,8 @@ a:visited {
 footer {
     background-color: #fffd8c;
     padding: 5px 25px;
+    color: #333131; 
+    min-height: 200px;
 }
 h4 {
     padding: 0 100px 0 0;
@@ -160,7 +166,7 @@ h4 {
         margin-top: 20px;
     }
     .apply button {
-        height: 50px;
+        height: 55px;
         font-size: 2rem;
     }
     .apply p {
@@ -188,7 +194,7 @@ h4 {
     }
 }
 /*Desktop Styles*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
     header {
         padding: 25px 140px;
     }
@@ -210,10 +216,16 @@ h4 {
         grid-column: 3/4;
         padding: 40px 50px 40px 40px;
     }
+    /*using min-width to stop text overflowing button when resizing screen*/
+    .apply button {
+        min-width: 275px;
+    }
     footer {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-between;
+        padding: 0px 140px;
     }
+    /*used relative position to fix layout of socials to be more precise per mockup*/
     .socials {
         align-items: center;
         position: relative;
