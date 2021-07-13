@@ -1,5 +1,6 @@
 /*Import quicksand font; original "dashed" option in design not available in google fonts, so replacing headings with quicksand bold*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+/*landing page styles for mobile*/
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #f5f5f5;
@@ -65,6 +66,9 @@ nav ul li {
     justify-content: center;
     align-items: center;
 }
+.info p {
+    text-align: center;
+}
 h1 {
     font-size: 2.5em;
     text-align: center;
@@ -72,7 +76,7 @@ h1 {
 }
 p {
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
     color: #350a3e;
 }
 .shop {
@@ -125,11 +129,78 @@ a:link {
 a:hover {
     color: #c5db4c
 }
-
-
-
-
-
-
+/*Styling for about page (mobile)*/
+.owner {
+    background-color: #f6b2d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+}
+.owner img {
+    max-width: 192px;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.5em;
+    margin-top: -40px;
+}
+.employees {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.employees img {
+    max-width: 192px;
+}
+.employees h3, h4 {
+    text-align: center;
+}
+/*styling for menu page mobile*/
+.scoops {
+    background-color: #f6b2d2;
+    padding: 40px;
+}
+.sundaes {
+    background-color:#f6b2d2;
+    padding: 40px;
+}
+.pints {
+    background-color: #f6b2d2;
+    padding: 40px;
+}
+.greybox {
+    background-color: #f5f5f5;
+    margin-top: -40px;
+    padding: 40px;
+}
+.greybox h3 {
+    text-align: center;
+}
+.greybox p {
+    line-height: 2em;
+}
+.greybox button {
+    background-color: #350a3e;
+    color: #c5db4c;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    width: 200px;
+}
+.scoops img {
+    max-width: 280px;
+}
+.sundaes img {
+    max-width: 280px;
+}
+.pints img {
+    max-width: 280px;
+}
+footer {
+    margin-top: 50px;
+}
 
 
