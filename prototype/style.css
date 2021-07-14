@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5;
     color: #350a3e;
 }
-.banner, .nav, .icons  {
+.banner, .nav, .icons {
     background-color: #f6b2d2;
 }
 .banner {
@@ -202,5 +202,124 @@ h4 {
 footer {
     margin-top: 50px;
 }
-
-
+/*Tablet styles*/
+@media screen and (min-width: 369px) {
+    main {
+        padding: 50px 85px;
+    }
+    .banner {
+        display: flex;
+        background-image: url("../prototype/images/banner768.jpg");
+        background-repeat: no-repeat;
+        background-size: 768px 185px;
+        max-width: 768px;
+        justify-content: center;
+    }
+    .backgroundimage {
+        background-image: url("../prototype/images/background768.jpg");
+        background-repeat: no-repeat;
+        height: 400px;
+        margin-top: -16px;
+    }
+    .owner img {
+        max-width: 400px;
+    }
+    .employees img {
+        max-width: 400px;
+    }
+    .scoops img {
+        max-width: 485px;
+    }
+    .sundaes img {
+        max-width: 485px;
+    }
+    .pints img {
+        max-width: 485px;
+    }
+    .greybox button {
+        width: 400px;
+    }
+    /*Styling navbar & footer for tablet; made change to footer from original design to allow for more space between links*/
+    .nav {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "nav login"
+    }
+    .navbar {
+        grid-area: nav;
+        margin-top: -20px;
+        margin-left: -50px;
+    }
+    .icons {
+        grid-area: login;
+        margin-bottom: 0px;
+        position: relative;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "links icons"
+    }
+    .links {
+        grid-area: links;
+    }
+    .socialmedia {
+        grid-area: icons;
+    }
+}   
+/*Desktop styles*/
+@media screen and (min-width:768px) {
+    body {
+        max-width: 1640px;
+    }
+    .banner {
+        display: flex;
+        background-image: url("../prototype/images/banner1600.jpg");
+        background-repeat: no-repeat;
+        background-size: 1600px 185px;
+        max-width: 1600px;
+        height: 340px;
+        justify-content: center;
+    }
+    .backgroundimage {
+        background-image: url("../prototype/images/background768.jpg");
+        background-repeat: no-repeat;
+        background-size: 1640px 563px;
+        height: 600px;
+        margin-top: -50px;
+    }
+    header {
+        display: flex;
+        flex-direction: column; 
+    }
+    .nav {
+        margin-top: -100px;
+    }
+    .navbar {
+        position: relative;
+        left: 350px;
+    }
+    .banner img {
+        position: relative;
+        left: -500px;
+        top: 210px;
+    }
+    .info {
+        background-color: #f5f5f5;
+        max-width: 1365px;
+        position: absolute;
+        top: 575px;
+        left: 175px;
+        padding: 50px;
+    }
+    footer {
+        margin-top: -90px;
+    }
+    .links {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+}
