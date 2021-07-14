@@ -202,6 +202,31 @@ h4 {
 footer {
     margin-top: 50px;
 }
+/*creating animation as if all buttons on website are constantly glowing to draw attention*/
+@keyframes button {
+    0% {background-color: #350a3e; color: #c5db4c;}
+    25% {background-color: #c5db4c; color: #f6b2d2;}
+    50% {background-color: #f6b2d2; color: #350a3e;}
+    75% {background-color: #f5f5f5; color: #c5db4c;}
+}
+button {
+    animation-name: button;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/*creating animation to rotate the logo constantly*/
+.banner img {
+    transform: rotate(0deg);
+    transition: transform 5s;
+}
+.banner img:hover {
+    transform: rotate(360deg);
+}
+a:hover {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 /*Tablet styles*/
 @media screen and (min-width: 369px) {
     main {
@@ -399,6 +424,4 @@ footer {
     main {
         margin-bottom: 80px;
     }
-
-
 }
