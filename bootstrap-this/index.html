@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap This!</title>
+</head>
+<body>
+  <!--Using .container-fluid to create a header that spans the entire width of the page, and added some basic styles to the site headings-->
+  <header class="container-fluid bg-info text-center p-4">
+    <h1 class="display-1">Build Responsive Websites Faster with <a href="https://getbootstrap.com/" class="text-decoration-none text-muted">Bootstrap</a>!</h1>
+    <h2 class="display-5">Make the most of your time with these tips and tricks for getting started with Bootstrap</h2>
+  </header>
+  <main>
+    <!--Using .container to create responsive content-->
+    <div class="container bg-light">
+      <div class="row p-4">
+        <h3 class="border-bottom border-info">Introduction</h3>
+        <div class="bg-secondary pt-3"> 
+          <h5 class="text-info">About Bootstrap</h5>
+          <p>Bootstrap is an open source tool that features built in code that allows developers to quickly prototype and style HTML, CSS and Javascript projects. It features built in, fully styled elements such as buttons and cards as well as some powerful plugins built on jQuery.</p>
+      </div>
+      </div>
+      <div class="row p-4">
+        <h5>Responsive and Mobile First!</h5>
+          <p>Bootstrap uses mobile-first flexbox grid system to create layouts based on a 12 column grid. It features five default responsive breakpoints, and different styles can easily be applied to these different breakpoints, allowing for simple and effective user based web design.</p>
+      </div>
+      <div class="row p-4">
+        <div class="bg-secondary pt-3">
+          <h5 class="text-info">Predefined Components</h5>
+          <p>Bootstrap comes with a huge library of basically styled components such as buttons and lists to easily develop websites. Add your own custom CSS (<strong>always</strong> after the Bootstrap style sheet) to easily add in your own beautiful styles.</p>
+        </div>
+      </div>
+      <div  class="row p-4">
+        <h5>Get started now!</h5>
+        <p>To get started using Boostrap, simply copy and paste the following style sheet anywhere in the head of your HTML file. Remember, if adding custom CSS styles, you will need to link your own style sheet <strong>after</strong> the Bootstrap styles in the head!</p>
+        <div class="text-primary bg-white p-3 pb-0 text-center">
+          <pre>
+            <code class="text-wrap">&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;</code></pre>
+          </div>
+        <p class="pt-3">Many of Bootstrap's features require the addition of <span class="text-primary">Popper</span> (a tooltip and popover positioning engine) and Javascript. Add the following <span class="text-info">&lt;script&gt;s</span> right before the closing <span class="text-info">&lt;body&gt;</span> tag of your HTML. Should you wish to load Popper and JS seperately, you can find the appropriate <span class="text-info">&lt;script&gt;s</span> <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction" class="text-decoration-none text-muted">here</a>.</p>
+        <div class="text-primary bg-white p-3 pb-0 text-center">
+          <pre><code class="text-wrap">&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;</code></pre>
+        </div>
+        <p class="pt-3">Once you've loaded your style sheets and <span class="text-info">&lt;script&gt;s</span>, you can start to work with Bootstrap's layout system and components!</p>
+      </div>
+    </div>
+        <!--Using a container with rows and equal columns to create a grid layout exploring six different components -->
+        <div class="container">
+          <div>
+            <h3 class="border-bottom border-info pt-4">Some Components to Consider</h3>
+          </div>
+          <div><!--Row 1-->
+            <div> <!-- Accordions-->
+              <h6>Accordions</h6>
+                <p>Bootstrap's library features collapsible accordion sections for content. It uses a class of <span class="text-info">.collapse</span> internally to make it collapsible, but can be rendered as expanded using <span class="text-info">.open</span> on the <span class="text-info"> .accordion</span>.</p>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Example 1
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"     data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        This is the first accordion item's body.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Example #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                      This is the second accordion item's body.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Example #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                      This is the third accordion item's body.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div><!--Button section-->
+              <h6>Buttons</h6>
+              <p>Bootstrap provides a series of predefined, easily customizable buttons to make your forms and links pop! The <span class="text-info">.btn</span> classes are designed for use with the <span class="text-info">&lt;button&gt;</span> tag, but can also be used to style <span class="text-info">&lt;a&gt;</span> or <span class="text-info">&lt;input&gt;</span> elements.</p>
+              <p>Buttons can be solid with a background colour:</p>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-dark">Dark</button>
+              <button type="button" class="btn btn-link">Link</button>
+              <p>or shown as coloured outlines:</p>
+              <button type="button" class="btn btn-outline-primary">Primary</button>
+              <button type="button" class="btn btn-outline-secondary">Secondary</button>
+              <button type="button" class="btn btn-outline-success">Success</button>
+              <button type="button" class="btn btn-outline-danger">Danger</button>
+              <button type="button" class="btn btn-outline-warning">Warning</button>
+              <button type="button" class="btn btn-outline-info">Info</button>
+              <button type="button" class="btn btn-outline-light">Light</button>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+              <p>Button sizes can also be changed using <span class="text-info">.btn-lg</span> or <span class="text-info">.btn-sm</span>.</p>
+            </div>
+            <div><!-- Cards-->
+              <h6>Cards</h6>
+              <p>Bootstrap's library includes cards which create flexible content containers with multiple customizable options. They have a space for headers and footers, content, background colours and more, and are great for the amount of control and customization they offer. They are built with flexbox and are easy to align, but have no margin by default so require some styling using the spacing utitilies.</p>
+              <div class="card" style="width: 18rem;">
+                <img src="../bootstrap-this/images/museum-960.jpg" class="card-img-top" alt="a museum">
+                <div class="card-body">
+                  <h5 class="card-title">This is where the card's title or heading would go.</h5>
+                  <p class="card-text">This is where the body or content would go.</p>
+                  <a href="#" class="btn btn-info">This is a button!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div><!--Row2-->
+            <div><!--Carousels-->
+              <h6>Carousels</h6>
+              <p>A popular Bootstrap component offered is the carousel, often used to create scrolling images or slides of text. It is built with CSS 3D transforms and some Javascript, and has support built in for previous/next controls. There are no default dimensions set on slides, so you may need to use individual styling tools to appropriately size your content. Below is an example of a carousel of images, with control buttons.</p>
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../bootstrap-this/images/museum-960.jpg" class="d-block w-100" alt="a museum">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../bootstrap-this/images/museum-960.jpg" class="d-block w-100" alt="a museum">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../bootstrap-this/images/museum-960.jpg" class="d-block w-100" alt="a museum">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div><!--Spinners-->
+              <h6>Spinners</h6>
+              <p>Using only HTML and CSS (no Javascript involved!), Bootstrap's predefined spinners can be used to indicate a loading state of your website or content. They do require some Javascript to turn on and off their visibility. There are several different styles available, including:</p>
+              <p>Border Spinners</p>
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <p>and Growing Spinners</p>
+              <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <p>Spinners can be styled in a variety of ways - using margins to change spacing, flexbox and float utilities for alignment, or simply using the text align classes. Sizes can also be modified using classes like <span class="text-info">.spinner-border-small</span> and <span class="text-info">.spinner-grow-sm</span>.</p> 
+            </div>
+        </div>
+        </div>
+
+                    
+    </main>
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
