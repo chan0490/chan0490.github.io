@@ -5,7 +5,7 @@ body {
     font-size: 18pt;
     color: #3a405a;
 }
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Anton', sans-serif;
 }
 header {
@@ -87,4 +87,44 @@ footer img {
     padding: 10px 30px;
     text-align: center;
     color: #3a405a;
+}
+.contactform {
+    background-color: #EFF7FF;
+    padding: 30px 20px;
+}
+input {
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+textarea {
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+input[type=submit] {
+    background-color: #03b5aa;
+    border: #03b5aa;
+    border-radius: 30px;
+    padding: 10px;
+    color: #3a405a;
+    text-align: center;
+    position: relative;
+    right: -75px;
+
+    
+}
+.cv {
+    background-color: #03b5aa;
+    border: #03b5aa;
+    border-radius: 30px;
+    padding:  10px 40px;
+    color: #3a405a; 
+    text-align: center; 
+    position: relative;
+    right: -65px;
+}
+.cvarea {
+    padding: 40px;
+}
+.cvarea h3 {
+    text-align: center;
 }
