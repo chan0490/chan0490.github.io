@@ -48,3 +48,43 @@ footer img {
     margin-right: 10px;
     margin-left: 10px;
 }
+.illustrations {
+    background-image: url("/images/leo682.jpg");
+    background-size: cover;
+    padding: 70px;
+}
+.uxdesign {
+    background-image: url("/images/planet-botanix682.jpg");
+    background-size: cover;
+    padding: 70px;
+    margin-top: 40px;
+}
+.photography {
+    background-image: url("/images/crystalball-682.jpg");
+    background-size: cover;
+    padding: 70px;
+    margin-top: 40px;
+}
+.fineart {
+    background-image: url("/images/52pickup-682.jpg");
+    background-size: cover;
+    padding:70px;
+    margin-top: 40px;
+}
+.illustrations p, .uxdesign p, .photography p, .fineart p {
+    display: none;
+}
+.overlay {
+    background-color: rgba(239, 247, 255, 0.7);
+    padding: 30px;
+}
+.overlay a {
+    text-decoration: none;
+    background-color: #03b5aa;
+    font-size: 10pt;
+    border: solid #03b5aa 0.5pt;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    color: #3a405a;
+}
