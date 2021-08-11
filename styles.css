@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gothic+A1&display=swap');
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 18pt;
+    color: #3a405a;
+}
+h1, h2 {
+    font-family: 'Anton', sans-serif;
+}
+header {
+    background-color: #3a405a;
+}
+.logo {
+    max-width: 100px;
+}
+.headerimage {
+    max-width: 360px;
+    height: 150px;
+}
+.mainbody {
+    padding: 40px;
+}
+.about {
+    background-color: #EFF7FF;
+    max-width: 295px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+}
+footer {
+    background-color: #3a405a;
+    font-size: 10pt;
+    color: #03b5aa;
+    padding: 40px;
+}
+footer img {
+    max-width: 30px;
+}
+.socials {
+    display: flex;
+}
+.socialicons {
+    position: absolute;
+    right: 40px;
+}
+.socialicons img {
+    margin-right: 10px;
+    margin-left: 10px;
+}

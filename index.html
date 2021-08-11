@@ -20,23 +20,21 @@
             alt="banner image with gradient circles on a dark blue backdrop"
         >
         <!--Bootstrap Navbar with dropdown to be used for hamburger menu with specific breakpoints for mobile styles-->
-        <div class="container-fluid">
+        <div class="container-fluid navbar">
             <ul class="nav nav-pills navigation">
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fas fa-bars" style="color: #03b5aa"></i></a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fas fa-bars" style="color: #03b5aa;"></i></a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
                     <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                 </ul>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="index.html"><img src="images/rcdesignslogo.png" alt="Rob Chant Designs' logo"></a>
-                </li>
             </ul>
+            <a class="nav-link" href="index.html"><img src="images/rcdesignslogo.png" alt="Rob Chant Designs' logo" class="logo"></a>
         </div>
     </header>  
     <main>
-        <div class="container">
+        <div class="container mainbody">
             <h1>Welcome to Rob Chant Designs</h1>
             <div class="row">
                     <img srcset="../images/three-star-media290.jpg 375w,
@@ -45,12 +43,14 @@
                         src="images/three-star-media680.jpg"
                         alt="mockup of mobile, tablet and desktop view of a website design"
                     >
-                    <h2>About Me</h2>
-                    <p>Hello! My name is Rob Chant. I am a level 2 student in Algonquin College’s Interactive Media Design program in Ottawa, Ontario.
+                    <div class="about">
+                        <h2>About Me</h2>
+                        <p>Hello! My name is Rob Chant. I am a level 2 student in Algonquin College’s Interactive Media Design program in Ottawa, Ontario.
 
-                    I have previously studied history and visual arts (receiving a BFA from the University of Ottawa in 2018). I have a particular interest in design and minimalism, and love abstraction when it comes to painting and drawing.
-                        
-                    When I graduate from Algonquin, I hope to find work as a Web Designer. Click through to see some examples of my work!</p>
+                        I have previously studied history and visual arts (receiving a BFA from the University of Ottawa in 2018). I have a particular interest in design and minimalism, and love abstraction when it comes to painting and drawing.
+                            
+                        When I graduate from Algonquin, I hope to find work as a Web Designer. Click through to see some examples of my work!</p>
+                    </div>
             </div>
         </div>
 
@@ -58,17 +58,15 @@
     <footer>
         <div class="footer container-fluid">
             <div class="row">
-                <div class="col">
-                    <p>Copyright Rob Chant</p>
-                </div>
-                <div class="col-1">
-                    <a href="http://facebook.com"><img src="images/facebook.png" alt="facebook logo"></a>      
-                </div>
-                <div class="col-1">
-                    <a href="http://instagram.com"><img src="images/insta.png" alt="instagram logo"></a>
-                </div>
-                <div class="col-1">
-                    <a href="http://twitter.com"><img src="images/twitter.png" alt="twitter logo"></a>
+                <div class="col cols-1 socials">
+                    <p>&copy; 2021 Rob Chant</p>
+                    <div class="socialicons">
+                        <a href="http://facebook.com"><img src="images/facebook.png" alt="facebook logo"></a>      
+
+                        <a href="http://instagram.com"><img src="images/insta.png" alt="instagram logo"></a>
+
+                        <a href="http://twitter.com"><img src="images/twitter.png" alt="twitter logo"></a>
+                    </div>
                 </div>
             </div>
             
