@@ -128,3 +128,32 @@ input[type=submit] {
 .cvarea h3 {
     text-align: center;
 }
+.popup {
+    max-width: 281px;
+    margin-bottom: 40px;
+}
+.landingimage {
+    max-width: 290px;
+}
+@media screen and (min-width: 600px) {
+    .landingimage {
+        max-width: 450px;
+    }
+    .about {
+        max-width: 450px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .landingimage {
+        max-width: 550px;
+        padding: 50px;
+        margin: 0 auto;
+    }
+    .about {
+        margin-top: 0;
+        max-width: 550px;
+    }
+    .largebckgd {
+        background-color: #EFF7FF
+    }
+}
