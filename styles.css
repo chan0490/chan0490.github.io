@@ -15,8 +15,9 @@ header {
     max-width: 100px;
 }
 .headerimage {
-    max-width: 360px;
-    height: 150px;
+    width: 100%;
+    height: 300px;
+    background-image: url("/images/headerimg375.png");
 }
 .mainbody {
     padding: 40px;
@@ -52,6 +53,7 @@ footer img {
     background-image: url("/images/leo682.jpg");
     background-size: cover;
     padding: 70px;
+    margin-top: 40px;
 }
 .uxdesign {
     background-image: url("/images/planet-botanix682.jpg");
@@ -94,11 +96,11 @@ footer img {
 }
 input {
     margin-bottom: 40px;
-    max-width: 100%;
+    width: 100%;
 }
 textarea {
     margin-bottom: 40px;
-    max-width: 100%;
+    width: 100%;
 }
 input[type=submit] {
     background-color: #03b5aa;
@@ -107,23 +109,20 @@ input[type=submit] {
     padding: 10px;
     color: #3a405a;
     text-align: center;
-    position: relative;
-    right: -75px;
-
-    
+    max-width: 100%;
 }
-.cv {
+input[type=button] {
     background-color: #03b5aa;
     border: #03b5aa;
     border-radius: 30px;
     padding:  10px 40px;
     color: #3a405a; 
     text-align: center; 
-    position: relative;
-    right: -65px;
+    width: 100%;
 }
 .cvarea {
     padding: 40px;
+    max-width: 100%;
 }
 .cvarea h3 {
     text-align: center;
@@ -135,6 +134,9 @@ input[type=submit] {
 .landingimage {
     max-width: 290px;
 }
+.overlay {
+    text-align: center;
+}
 @media screen and (min-width: 600px) {
     .landingimage {
         max-width: 450px;
@@ -142,6 +144,16 @@ input[type=submit] {
     .about {
         max-width: 450px;
     }
+    .headerimage {
+        max-width: 600px;
+    }
+    input {
+        max-width: 100%;
+    }
+    .logo {
+        max-width: 200px;
+    }
+
 }
 @media screen and (min-width: 992px) {
     .landingimage {
@@ -155,5 +167,12 @@ input[type=submit] {
     }
     .largebckgd {
         background-color: #EFF7FF
+    }
+    .headerimage {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    input {
+        max-width: 100%;
     }
 }
