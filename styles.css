@@ -137,6 +137,18 @@ input[type=button] {
 .overlay {
     text-align: center;
 }
+.cvlink {
+    background-color: #03b5aa;
+    border: #03b5aa;
+    border-radius: 30px;
+    padding:  10px 40px;
+    color: #3a405a; 
+    text-align: center; 
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    left: 35%;
+}
 @media screen and (min-width: 600px) {
     .landingimage {
         max-width: 450px;
